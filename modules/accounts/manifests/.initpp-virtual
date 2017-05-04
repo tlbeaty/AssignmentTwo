@@ -1,0 +1,23 @@
+# Used to define/realize users on Puppet-managed systems
+#
+class accounts {
+
+  @accounts::virutal { 'tom' :
+     uid	=> '600',
+     realname	=> 'Tom',
+     pass	=> ''
+     }
+
+  @accounts::virutal { 'dick' :
+     uid	=> '601',
+     realname	=> 'Dick',
+     pass	=> ''
+     }
+
+  @accounts::virutal { "ravi" :
+     uid	=> '602',
+     realname	=> 'Ravi',
+     pass	=> ''
+     }
+
+}

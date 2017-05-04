@@ -1,0 +1,38 @@
+class accounts {
+
+	group { "webdevs" :
+		ensure	=> present,
+		gid	=> '901',
+	}
+
+	user { "tom" :
+		ensure	=> present,
+		uid	=> '600',
+		gid	=> 'users',
+		groups	=> 'webdevs',
+		shell	=> '/bin/bash',
+		home	=> '/home/tom',
+		managehome	=> true,
+	}
+
+	user { "dick" :
+		ensure  => present,
+		uid	=> '601',
+		gid	=> 'users',
+		groups  => 'webdevs',
+		shell   => '/bin/bash',
+		home    => '/home/dick',
+		managehome      => true,
+	}
+
+	user { "ravi" :
+		ensure  => present,
+		uid	=> '602',
+		gid	=> 'users',
+		groups  => 'webdevs',
+		shell   => '/bin/bash',
+		home    => '/home/ravi',
+		managehome      => true,
+	}
+
+}

@@ -1,0 +1,9 @@
+# AssignmentOne
+
+Default user: builder
+
+The SSH keys are located in the keys folder
+
+The build script will look for iso/CentOS-6.9-x86_64-minimal.iso.
+
+
